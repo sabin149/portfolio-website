@@ -1,41 +1,39 @@
-import React from "react";
-
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font h-24 bg-[#e6e6e6]">
-      <div className="container px-5 py-4 flex items-center flex-col justify-center">
-        <div className="flex mx-auto justify-center items-center">
-          <a className="text-gray-500">
+    <footer className="text-gray-600 h-32 lg:h-20 bg-[#e6e6e6] flex flex-col items-center justify-center py-5 mt-8">
+      <div className="flex flex-col gap-[0.015rem]">
+        <div className="flex flex-row justify-center items-center mt-1">
+          <a className="text-gray-500 mr-2">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-8 h-8"
               viewBox="0 0 24 24"
             >
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a className="ml-3 text-gray-500">
+          <a className=" text-gray-500 mr-2">
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-8 h-8"
               viewBox="0 0 24 24"
             >
               <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
             </svg>
           </a>
-          <a className="ml-3 text-gray-500">
+          <a className=" text-gray-500 mr-2">
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-8 h-8"
               viewBox="0 0 24 24"
             >
@@ -43,13 +41,13 @@ const Footer = () => {
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a className="ml-3 text-gray-500">
+          <a className=" text-gray-500 mr-2">
             <svg
               fill="currentColor"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="0"
               className="w-8 h-8"
               viewBox="0 0 24 24"
             >
@@ -60,14 +58,12 @@ const Footer = () => {
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
-          {/* Copyright @ 2023. All Right Reserved. kritikrawal.com.np    |    Designed & Developed by Kritik Rawal */}
         </div>
-
-        <p className="text-lg text-gray-500 mt-2">
-          <span>© 2023. All Right Reserved. kritikrawal.com.np </span>
-          <span>| </span>
-          <span>Designed & Developed By Kritik Rawal</span>
-        </p>
+        <div className="flex flex-col lg:flex-row justify-center items-center md:text-lg text-base flex-wrap">
+          <p>&copy; 2023. All Right Reserved. </p>
+          <p className="mr-1">kritikrawal.com.np | </p>
+          <p>Designed & Developed By Kritik Rawal</p>
+        </div>
       </div>
     </footer>
   );

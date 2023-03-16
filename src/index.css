@@ -12,3 +12,29 @@
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+/* carousel arrow icons */
+.react-slideshow-container .default-nav {
+  margin: 0 20px 0 20px;
+}
+
+.nav > svg {
+  width: 18px;
+  height: 18px;
+}
+
+.react-slideshow-container .default-nav {
+  margin: 0 45px 0 45px;
+}
