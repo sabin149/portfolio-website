@@ -3,9 +3,9 @@ import { useState } from "react";
 const BottomToTopBtn = () => {
   const [showScroll, setShowScroll] = useState(false);
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 200) {
+    if (!showScroll && window.pageYOffset > 150) {
       setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 200) {
+    } else if (showScroll && window.pageYOffset <= 150) {
       setShowScroll(false);
     }
   };
@@ -20,7 +20,7 @@ const BottomToTopBtn = () => {
   return showScroll ? (
     <div className="fixed bottom-5 right-5">
       <button
-        className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold p-3 rounded-full"
+        className="rounded-full bg-indigo-500 p-3 font-bold text-white hover:bg-indigo-700"
         onClick={handleScrollToTop}
       >
         <svg

@@ -5,12 +5,12 @@ import WhatPeopleSayAboutMe from "components/Home/WhatPeopleSayAboutMe";
 
 const Home = () => {
   return (
-    <div>
+    <section>
       <Carousel />
       <Expertise />
       <MyAriticlesAndWritings />
       <WhatPeopleSayAboutMe />
-    </div>
+    </section>
   );
 };
 

@@ -16,10 +16,10 @@ const Expertise = () => {
           <div className="flex flex-wrap ">
             {expertiseData.map((expertise) => {
               return (
-                <div className="p-4 sm:w-1/2 lg:w-1/3" key={expertise.id}>
+                <div className="p-3 sm:w-1/2 lg:w-1/3" key={expertise.id}>
                   <div className="max-h-full overflow-hidden rounded-lg border-opacity-60 bg-[#EC733F] px-5 pt-5">
                     <img
-                      className="w-full object-cover object-center transition duration-500 ease-in-out hover:scale-105 md:h-36 lg:h-60"
+                      className="w-full object-cover object-center transition duration-500 ease-in-out hover:scale-[1.02] md:h-36 lg:h-60"
                       src={expertise.imageUrl}
                       alt={expertise.title}
                     />

@@ -11,14 +11,14 @@ const Carousel = () => {
           return (
             <div
               key={image.id}
-              className="flex items-center justify-center bg-cover h-96"
+              className="flex h-96 items-center justify-center bg-cover"
               style={{
                 backgroundImage: `url(${image.imageUrl})`,
               }}
             >
-              <div className="relative z-10 flex flex-col items-center justify-center h-full">
+              <div className="relative z-10 flex h-full flex-col items-center justify-center">
                 <a
-                  className="px-4 py-2 mt-80 text-lg font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-full transition duration-300 ease-in-out"
+                  className="mt-80 rounded-full bg-indigo-500 px-4 py-2 text-lg font-bold text-white transition duration-300 ease-in-out hover:bg-indigo-600"
                   href={myCV}
                   download
                 >
