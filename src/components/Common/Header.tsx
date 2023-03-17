@@ -1,9 +1,17 @@
-import React, { useState } from "react";
-import locofy from "assets/react.svg";
+import { useMemo, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { navigationLinks } from "data/Data";
+
+const activeStyle = {
+  color: "#DD7930",
+};
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const memoizedNavigationLinks = useMemo(() => {
+    return navigationLinks;
+  }, []);
 
   return (
     <header className="flex w-full flex-col flex-wrap items-start justify-between border bg-[#e6e6e6] py-2.5 px-8 text-gray-600 lg:flex-row lg:items-center lg:px-10">
@@ -61,13 +69,17 @@ function Header() {
           </button>
         </div>
       </div>
-      <div className={`lg:block ${isOpen ? "block" : "hidden"}`}>
-        <nav className="mt-2 flex flex-col flex-wrap items-start justify-center gap-2 border lg:mt-0 lg:flex-row lg:items-center lg:gap-16">
-          {Links.map((link) => {
+      <div className={` lg:block ${isOpen ? "block" : "hidden"}`}>
+        <nav className="mt-2 flex w-auto flex-col flex-wrap items-start justify-center gap-2  lg:mt-0 lg:flex-row lg:items-center lg:gap-16">
+          {memoizedNavigationLinks.map((link) => {
             return (
               <NavLink
+                key={link.id}
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 to={link.url}
-                className="cursor-pointer text-lg font-bold capitalize text-slate-800 hover:underline md:text-xl"
+                className=" cursor-pointer text-lg font-bold capitalize text-slate-800 transition duration-300 
+                ease-in-out hover:text-[#DD7930] md:text-xl
+                "
               >
                 {link.text}
               </NavLink>
@@ -82,40 +94,12 @@ function Header() {
       >
         <Link
           to="/contact"
-          className=" rounded-lg border-0 bg-[#f18d62] py-2.5 px-5 text-lg font-bold text-gray-50 hover:bg-[#EC733F] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          className=" rounded-lg border-0 bg-[#f18d62] py-2.5 px-5 text-lg font-bold text-gray-50 hover:bg-[#EC733F] focus:outline-none focus:ring-2 focus:ring-[#DD7930] focus:ring-offset-2"
         >
           Contact
         </Link>
-        {/* <button
-          type="button"
-          className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e2845d]"
-        >
-          Sign up
-        </button> */}
       </div>
     </header>
   );
 }
 export default Header;
-export const Links = [
-  {
-    id: 1,
-    url: "/",
-    text: "Home",
-  },
-  {
-    id: 2,
-    url: "/about-me",
-    text: "About Me",
-  },
-  {
-    id: 3,
-    url: "/blogs",
-    text: "Blogs",
-  },
-  {
-    id: 4,
-    url: "/media-coverage",
-    text: "Media Coverage",
-  },
-];

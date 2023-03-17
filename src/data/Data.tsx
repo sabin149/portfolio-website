@@ -1,3 +1,27 @@
+// header data
+export const navigationLinks = [
+  {
+    id: 1,
+    url: "/",
+    text: "Home",
+  },
+  {
+    id: 2,
+    url: "/about-me",
+    text: "About Me",
+  },
+  {
+    id: 3,
+    url: "/blogs",
+    text: "Blogs",
+  },
+  {
+    id: 4,
+    url: "/media-coverage",
+    text: "Media Coverage",
+  },
+];
+
 // my articles data
 export const myArticlesData = [
   {
@@ -70,6 +94,7 @@ export const bannerImagesData = [
   },
 ];
 
+// expertise data
 export const expertiseData = [
   {
     id: 1,
@@ -88,6 +113,7 @@ export const expertiseData = [
   },
 ];
 
+// testimonial data
 export const testimonialData = [
   {
     id: 1,
