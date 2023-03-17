@@ -1,11 +1,16 @@
+import React, { useState } from "react";
+import locofy from "assets/react.svg";
 import { Link, NavLink } from "react-router-dom";
-const Header = () => {
+
+function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="text-gray-600 body-font bg-[#e6e6e6] flex flex-wrap">
-      <div className="container mx-auto flex px-5 flex-col md:flex-row items-center h-14 ">
+    <header className="flex w-full flex-col flex-wrap items-start justify-between border bg-[#e6e6e6] py-2.5 px-8 text-gray-600 lg:flex-row lg:items-center lg:px-10">
+      <div className="logo__div flex w-full flex-row flex-wrap items-center justify-between border lg:w-auto lg:justify-start">
         <Link
           to="/"
-          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          className="flex flex-row flex-wrap items-center justify-center font-medium text-gray-900"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,38 +19,103 @@ const Header = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            className="h-10 w-10 rounded-full bg-indigo-500 p-2 text-white"
             viewBox="0 0 24 24"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-xl font-semibold tracking-wide uppercase text-[#DD7930]">
+          <span className="ml-3 text-xl font-semibold uppercase tracking-wide text-[#DD7930]">
             Kritik Rawal
           </span>
         </Link>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center text-lg font-bold text-slate-900 cursor-pointer  capitalize">
-          <NavLink to="/" className="mr-14 hover:underline">
-            Home
-          </NavLink>
-          <NavLink to="/about-me" className="mr-14 hover:underline">
-            About Me
-          </NavLink>
-          <NavLink to="/blogs" className="mr-14 hover:underline">
-            Blogs
-          </NavLink>
-          <NavLink to="media-coverage" className="mr-14 hover:underline">
-            Media Coverage
-          </NavLink>
+        <div className="hamburger-icon__div block text-right text-gray-900 lg:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="h-7 w-7 rounded transition
+            duration-300 ease-in-out"
+          >
+            <svg
+              className={` fill-current ${isOpen ? "hidden" : "block"}`}
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+              />
+            </svg>
+            <svg
+              className={` fill-current ${isOpen ? "block" : "hidden"}`}
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div className={`lg:block ${isOpen ? "block" : "hidden"}`}>
+        <nav className="mt-2 flex flex-col flex-wrap items-start justify-center gap-2 border lg:mt-0 lg:flex-row lg:items-center lg:gap-16">
+          {Links.map((link) => {
+            return (
+              <NavLink
+                to={link.url}
+                className="cursor-pointer text-lg font-bold capitalize text-slate-800 hover:underline md:text-xl"
+              >
+                {link.text}
+              </NavLink>
+            );
+          })}
         </nav>
-        <a
-          href="/contact"
-          className="hover:bg-[#EC733F] bg-[#f18d62] text-gray-50 border-0 py-2 px-5 focus:outline-none rounded-lg text-lg font-bold mt-4 md:mt-0"
+      </div>
+      <div
+        className={`btn__div mt-5 mb-5 lg:mb-0 lg:mt-0 lg:block ${
+          isOpen ? "block" : "hidden"
+        }`}
+      >
+        <Link
+          to="/contact"
+          className=" rounded-lg border-0 bg-[#f18d62] py-2.5 px-5 text-lg font-bold text-gray-50 hover:bg-[#EC733F] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
           Contact
-        </a>
+        </Link>
+        {/* <button
+          type="button"
+          className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e2845d]"
+        >
+          Sign up
+        </button> */}
       </div>
     </header>
   );
-};
-
+}
 export default Header;
+export const Links = [
+  {
+    id: 1,
+    url: "/",
+    text: "Home",
+  },
+  {
+    id: 2,
+    url: "/about-me",
+    text: "About Me",
+  },
+  {
+    id: 3,
+    url: "/blogs",
+    text: "Blogs",
+  },
+  {
+    id: 4,
+    url: "/media-coverage",
+    text: "Media Coverage",
+  },
+];

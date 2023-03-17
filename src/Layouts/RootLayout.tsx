@@ -6,6 +6,7 @@ const RootLayout = () => {
   return (
     <>
       <ScrollRestoration />
+
       <Header />
       <main>
         <Outlet />
