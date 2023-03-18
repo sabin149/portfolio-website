@@ -2,15 +2,12 @@ import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import myCV from "assets/1.pdf";
 import { bannerImagesData } from "data/Data";
-import { useMemo } from "react";
-
-const memoizedBannerImagesData = useMemo(() => bannerImagesData, []);
 
 const Carousel = () => {
   return (
     <section>
       <Fade duration={3000}>
-        {memoizedBannerImagesData.map((image) => {
+        {bannerImagesData.map((image) => {
           return (
             <div
               key={image.id}

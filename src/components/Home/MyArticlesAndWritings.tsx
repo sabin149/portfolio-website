@@ -1,8 +1,5 @@
 import { myArticlesData } from "data/Data";
-import { useMemo } from "react";
 import { Link } from "react-router-dom";
-
-const memoizedMyArticlesData = useMemo(() => myArticlesData, []);
 
 const MyArticlesAndWritings = () => {
   return (
@@ -15,7 +12,7 @@ const MyArticlesAndWritings = () => {
           <hr className="mt-1 block h-1 w-[90%] rounded bg-indigo-500 sm:w-[26.5rem]" />
         </div>
         <div className="flex flex-wrap items-center justify-center">
-          {memoizedMyArticlesData.slice(0, 6).map((article) => {
+          {myArticlesData.slice(0, 6).map((article) => {
             return (
               <div className="p-5 sm:w-1/2 lg:w-1/3" key={article.id}>
                 <div>

@@ -1,7 +1,5 @@
 import { expertiseData } from "data/Data";
-import { useMemo } from "react";
 
-const memoizedExpertiseData = useMemo(() => expertiseData, []);
 const Expertise = () => {
   return (
     <section className="body-font text-gray-600">
@@ -17,7 +15,7 @@ const Expertise = () => {
         <div>
           <div className="container mx-auto px-5">
             <div className="flex flex-wrap ">
-              {memoizedExpertiseData.map((expertise) => {
+              {expertiseData.map((expertise) => {
                 return (
                   <div className="p-3 sm:w-1/2 lg:w-1/3" key={expertise.id}>
                     <div className="max-h-full overflow-hidden rounded-md border-opacity-60 bg-[#EC733F] px-5 pt-5 shadow-md">

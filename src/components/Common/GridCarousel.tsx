@@ -1,9 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { testimonialData } from "data/Data";
-import { useMemo } from "react";
-
-const memoizedTestimonialData = useMemo(() => testimonialData, []);
 
 const GridCarousel = () => {
   return (
@@ -30,7 +27,7 @@ const GridCarousel = () => {
           },
         ]}
       >
-        {memoizedTestimonialData.map((testimonial) => {
+        {testimonialData.map((testimonial) => {
           return (
             <div
               className="mx-1 flex flex-wrap items-center justify-center"
