@@ -13,7 +13,7 @@ function Header({ isOpen, setIsOpen }: openStateType) {
   }, []);
 
   return (
-    <header className="flex w-full flex-col flex-wrap items-start justify-between border bg-[#e6e6e6] py-2.5 px-8 text-gray-600 lg:flex-row lg:items-center lg:px-10">
+    <header className="flex w-full flex-col flex-wrap items-start justify-between border bg-[#e6e6e6] py-1.5 px-8 text-gray-600 lg:flex-row lg:items-center lg:px-10 ">
       <div className="logo__div flex w-full flex-row flex-wrap items-center justify-between border lg:w-auto lg:justify-start">
         <Link
           to="/"
@@ -31,7 +31,7 @@ function Header({ isOpen, setIsOpen }: openStateType) {
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-xl font-semibold uppercase tracking-wide text-[#DD7930]">
+          <span className="text-[#DD7930]2xl:text-xl ml-3 text-xl font-semibold uppercase tracking-wide">
             Kritik Rawal
           </span>
         </Link>
@@ -54,7 +54,7 @@ function Header({ isOpen, setIsOpen }: openStateType) {
               />
             </svg>
             <svg
-              className={` fill-current ${isOpen ? "block" : "hidden"}`}
+              className={`fill-current ${isOpen ? "block" : "hidden"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -69,15 +69,15 @@ function Header({ isOpen, setIsOpen }: openStateType) {
         </div>
       </div>
       <div className={` lg:block ${isOpen ? "block" : "hidden"}`}>
-        <nav className="mt-2 flex w-auto flex-col flex-wrap items-start justify-center gap-2  lg:mt-0 lg:flex-row lg:items-center lg:gap-16">
+        <nav className="mt-2 flex w-auto flex-col flex-wrap items-start justify-center gap-2 lg:mt-0 lg:flex-row lg:items-center lg:gap-12 xl:gap-14 2xl:gap-16 3xl:gap-20">
           {memoizedNavigationLinks.map((link) => {
             return (
               <NavLink
                 key={link.id}
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 to={link.url}
-                className=" cursor-pointer text-lg font-bold capitalize text-slate-800 transition duration-300 
-                ease-in-out hover:text-[#DD7930] md:text-xl
+                className=" capitalizetext-slate-800 cursor-pointer text-lg font-bold transition duration-300 
+                ease-in-out hover:text-[#DD7930] 3xl:text-xl
                 "
               >
                 {link.text}
@@ -93,7 +93,7 @@ function Header({ isOpen, setIsOpen }: openStateType) {
       >
         <Link
           to="/contact"
-          className=" rounded-lg border-0 bg-[#f18d62] py-2.5 px-5 text-lg font-bold text-gray-50 hover:bg-[#EC733F] focus:outline-none focus:ring-2 focus:ring-[#DD7930] focus:ring-offset-2"
+          className="rounded-lg border-0 bg-[#f18d62] py-2 px-5 text-lg font-bold text-gray-50 hover:bg-[#EC733F] focus:outline-none focus:ring-2 focus:ring-[#DD7930] focus:ring-offset-2 "
         >
           Contact
         </Link>

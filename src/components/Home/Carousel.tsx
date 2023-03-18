@@ -18,7 +18,7 @@ const Carousel = () => {
             >
               <div className="relative z-10 flex h-full flex-col items-center justify-center">
                 <a
-                  className="mt-80 rounded-full bg-indigo-500 px-4 py-2 text-lg font-bold text-white transition duration-300 ease-in-out hover:bg-indigo-600"
+                  className="mt-80 rounded-full bg-indigo-500 px-4 py-2 text-lg font-bold text-gray-50 transition duration-300 ease-in-out hover:bg-indigo-600"
                   href={myCV}
                   download
                 >

@@ -3,6 +3,14 @@ export type openStateType = {
   setIsOpen: (isOpen: boolean) => void;
 };
 
+export interface articlesDataInterface {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  articleUrl: string;
+}
+
 export interface formDataInterface {
   fullName: string;
   email: string;
