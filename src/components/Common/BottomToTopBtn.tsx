@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const BottomToTopBtn = () => {
   const [showScroll, setShowScroll] = useState(false);
+
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 150) {
       setShowScroll(true);

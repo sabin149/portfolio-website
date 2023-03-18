@@ -2,14 +2,16 @@ import { Outlet, ScrollRestoration } from "react-router-dom";
 import Header from "components/Common/Header";
 import Footer from "components/Common/Footer";
 import BottomToTopBtn from "components/Common/BottomToTopBtn";
+import { useState } from "react";
+
 const RootLayout = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <ScrollRestoration />
-
-      <Header />
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <main>
-        <Outlet />
+        <Outlet context={{ isOpen, setIsOpen }} />
       </main>
       <BottomToTopBtn />
       <Footer />

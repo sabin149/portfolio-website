@@ -1,14 +1,13 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navigationLinks } from "data/Data";
+import { openStateType } from "types/Types";
 
 const activeStyle = {
   color: "#DD7930",
 };
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
+function Header({ isOpen, setIsOpen }: openStateType) {
   const memoizedNavigationLinks = useMemo(() => {
     return navigationLinks;
   }, []);

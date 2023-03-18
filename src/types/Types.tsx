@@ -1,3 +1,8 @@
+export type openStateType = {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+};
+
 export interface formDataInterface {
   fullName: string;
   email: string;
@@ -16,4 +21,6 @@ export const initialState: formDataInterface = {
   message: "",
 };
 
-export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export const emailRegex = /^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+
+export const phoneNumberRegex = /^\d{10,}$/;

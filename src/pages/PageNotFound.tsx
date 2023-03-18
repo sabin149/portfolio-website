@@ -1,7 +1,10 @@
+import useCustomEffect from "hooks/useCustomEffect";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
+  useCustomEffect();
+
   return (
     <section className="flex h-full items-center p-16 ">
       <div className="container mx-auto my-8 flex flex-col items-center justify-center px-5">
