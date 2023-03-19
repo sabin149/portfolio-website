@@ -22,7 +22,7 @@ const Expertise = () => {
                     className="w-full px-3 py-1 sm:w-1/2 sm:px-5 lg:w-1/3"
                     key={expertise.id}
                   >
-                    <div className="max-h-full overflow-hidden rounded-sm border-opacity-60 bg-[#EC733F] px-4 pt-4 shadow-md">
+                    <div className="max-h-full overflow-hidden rounded-sm border-opacity-60 bg-[#EC733F] px-3 pt-3.5 shadow-md">
                       <Link to={expertise.pageUrl}>
                         <img
                           className="h-60 w-full object-cover object-center transition duration-500 ease-in-out hover:scale-[1.02]"
