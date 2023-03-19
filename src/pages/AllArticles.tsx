@@ -22,15 +22,20 @@ const AllArticles = () => {
   };
   useCustomEffect();
   return (
-    <section className="mt-8">
+    <section className="mt-5">
       <div className="flex flex-col flex-wrap items-center justify-center">
         <MyArticlesAndWritings articlesData={articles} />
         {showMore ? (
           <div
-            className="mt-4 flex w-1/2 items-center justify-center rounded-full bg-indigo-500 px-4 py-2 text-lg font-bold text-gray-50 transition duration-300 ease-in-out hover:bg-indigo-600
+            className="mt-4 flex w-full  items-center justify-center  
         "
           >
-            <button onClick={loadMore}>Load More</button>
+            <button
+              onClick={loadMore}
+              className="w-1/2 rounded-full bg-indigo-500 px-4 py-2 text-lg font-bold text-gray-50 transition duration-300 ease-in-out hover:bg-indigo-600"
+            >
+              Load More
+            </button>
           </div>
         ) : null}
       </div>

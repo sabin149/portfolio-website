@@ -9,8 +9,10 @@ import PageNotFound from "pages/PageNotFound";
 import AboutMe from "pages/AboutMe";
 import Contact from "pages/Contact";
 import MediaCoverage from "pages/MediaCoverage";
-import Blogs from "pages/Blogs";
 import AllArticles from "pages/AllArticles";
+import ContentCreation from "pages/ContentCreation";
+import VoiceOver from "pages/VoiceOver";
+import InformationTechnology from "pages/InformationTechnology";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,9 +20,14 @@ const Router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about-me" element={<AboutMe />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="blogs" element={<Blogs />} />
       <Route path="media-coverage" element={<MediaCoverage />} />
       <Route path="all-articles" element={<AllArticles />} />
+      <Route
+        path="information-technology"
+        element={<InformationTechnology />}
+      />
+      <Route path="voice-over" element={<VoiceOver />} />
+      <Route path="content-creation" element={<ContentCreation />} />
 
       <Route path="*" element={<PageNotFound />} />
     </Route>

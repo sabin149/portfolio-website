@@ -7,22 +7,25 @@ const MyArticlesAndWritings = ({
 }: {
   articlesData: articlesDataInterface[];
 }) => {
-  const location = useLocation();
+  const { pathname } = useLocation();
   const [check, setCheck] = useState(false);
 
   useEffect(() => {
-    if (location.pathname === "/") {
+    if (pathname === "/") {
       setCheck(true);
     } else {
       setCheck(false);
     }
-  }, [location.pathname]);
+  }, [pathname]);
+
   return (
-    <section className="body-font text-gray-600 ">
+    <section className="body-font mt-4 text-gray-600">
       <div className="mx-auto w-full px-0 pt-1 2xl:px-[4.5rem]">
         <div className="flex w-full flex-col flex-wrap items-center justify-center">
           <h1 className="title-font text-xl font-semibold capitalize text-gray-900 sm:text-xl md:text-2xl lg:text-3xl">
-            My Articles And Writings
+            {pathname === "/" || pathname === "/all-articles"
+              ? "My Articles and Writings"
+              : "Media Coverage"}
           </h1>
           <hr className="mt-1 mb-1 block h-1.5 w-[90%] rounded bg-indigo-500 sm:w-[26.5rem] " />
         </div>

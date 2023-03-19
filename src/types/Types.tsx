@@ -10,6 +10,13 @@ export interface articlesDataInterface {
   imageUrl: string;
   articleUrl: string;
 }
+export interface mediaCoverageDataInterface {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  articleUrl: string;
+}
 
 export interface formDataInterface {
   fullName: string;
