@@ -19,7 +19,7 @@ const MyArticlesAndWritings = ({
   }, [pathname]);
 
   return (
-    <section className="body-font mt-4 text-gray-600">
+    <section className="body-font mt-6 text-gray-600">
       <div className="mx-auto w-full px-0 pt-1 2xl:px-[4.5rem]">
         <div className="flex w-full flex-col flex-wrap items-center justify-center">
           <h1 className="title-font text-xl font-semibold capitalize text-gray-900 sm:text-xl md:text-2xl lg:text-3xl">

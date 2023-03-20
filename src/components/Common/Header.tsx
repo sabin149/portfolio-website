@@ -31,7 +31,7 @@ function Header({ isOpen, setIsOpen }: openStateType) {
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="text-[#DD7930]2xl:text-xl ml-3 text-xl font-semibold uppercase tracking-wide">
+          <span className="ml-3 text-xl font-semibold uppercase tracking-wide text-[#DD7930] 2xl:text-xl">
             Kritik Rawal
           </span>
         </Link>
@@ -76,7 +76,7 @@ function Header({ isOpen, setIsOpen }: openStateType) {
                 key={link.id}
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 to={link.url}
-                className=" capitalizetext-slate-800 cursor-pointer text-lg font-bold transition duration-300 
+                className="capitalizetext-slate-800 cursor-pointer text-lg font-bold transition duration-300 
                 ease-in-out hover:text-[#DD7930] 3xl:text-xl
                 "
               >
@@ -84,6 +84,15 @@ function Header({ isOpen, setIsOpen }: openStateType) {
               </NavLink>
             );
           })}
+          <a
+            href="http://blogspot.com"
+            className="capitalizetext-slate-800 cursor-pointer text-lg font-bold transition duration-300 
+                ease-in-out hover:text-[#DD7930] 3xl:text-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blogs
+          </a>
         </nav>
       </div>
       <div

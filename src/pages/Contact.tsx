@@ -6,10 +6,12 @@ import {
 } from "types/Types";
 import React, { useState } from "react";
 import useCustomEffect from "hooks/useCustomEffect";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState<formDataInterface>(initialState);
   const [errorMsg, setErrorMsg] = useState<formDataInterface>(initialState);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
   useCustomEffect();
 
@@ -48,9 +50,45 @@ const Contact = () => {
       });
     } else {
       setErrorMsg(initialState);
-      console.log(formData);
+      await emailjs.sendForm(
+        "service_vteje9v",
+        "template_zlc4irh",
+        e.target as HTMLFormElement,
+        "sBP68nEYVOA115g_8"
+      );
+      setFormData(initialState);
+      setIsSuccess(true);
+      // console.log(formData);
     }
   };
+
+  const successContent = isSuccess ? (
+    <div
+      className="mb-2 flex rounded-lg bg-green-50 p-4 text-sm text-green-800"
+      role="alert"
+    >
+      <svg
+        aria-hidden="true"
+        className="mr-3 inline h-5 w-5 flex-shrink-0"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+          clipRule="evenodd"
+        ></path>
+      </svg>
+      <div>
+        <span className="font-medium">
+          Thank you for contacting us! We will get back to you as soon as
+          possible.
+        </span>
+      </div>
+    </div>
+  ) : null;
+
   return (
     <section className=" px-2 lg:px-0">
       <div className="mx-auto mt-6 max-w-3xl overflow-hidden  rounded-lg border px-5 py-5 shadow-md">
@@ -198,11 +236,12 @@ const Contact = () => {
             <div className="mb-2 w-full px-2">
               <button
                 type="submit"
-                className="py:2.5 w-full rounded-md bg-indigo-500 font-bold text-gray-50 shadow-lg hover:bg-indigo-600 hover:shadow-lg sm:py-3"
+                className="mb-3.5 w-full rounded-md bg-indigo-500 py-2.5 text-lg font-bold text-gray-50 shadow-lg hover:bg-indigo-600 hover:shadow-lg"
               >
                 Submit
               </button>
             </div>
+            {successContent}
           </div>
         </form>
       </div>

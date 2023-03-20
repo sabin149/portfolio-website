@@ -12,11 +12,6 @@ export const navigationLinks = [
   },
   {
     id: 3,
-    url: "https://blogspot.com",
-    text: "Blogs",
-  },
-  {
-    id: 4,
     url: "/media-coverage",
     text: "Media Coverage",
   },
