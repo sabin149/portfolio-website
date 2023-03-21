@@ -6,7 +6,8 @@ export type openStateType = {
 export interface articlesDataInterface {
   id: number;
   title: string;
-  description: string;
+  date: string;
+  mediaName: string;
   imageUrl: string;
   articleUrl: string;
 }

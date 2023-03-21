@@ -22,15 +22,15 @@ const Expertise = () => {
                     className="w-full px-3 py-1 sm:w-1/2 sm:px-5 lg:w-1/3"
                     key={expertise.id}
                   >
-                    <div className="max-h-full overflow-hidden rounded-sm border-opacity-60 bg-[#EC733F] px-3 pt-3.5 shadow-md">
+                    <div className="max-h-full overflow-hidden rounded-md border-2  bg-gray-50 px-3 pt-3.5 shadow-lg">
                       <Link to={expertise.pageUrl}>
                         <img
                           className="h-60 w-full object-cover object-center transition duration-500 ease-in-out hover:scale-[1.02]"
                           src={expertise.imageUrl}
                           alt={expertise.title}
                         />
-                        <div className="p-5 text-center">
-                          <h1 className="text-lg font-bold uppercase tracking-wide text-gray-50 sm:text-xl 2xl:text-2xl">
+                        <div className="py-3 px-0 text-center">
+                          <h1 className="text-lg font-semibold uppercase text-gray-800 sm:text-xl 2xl:text-2xl">
                             {expertise.title}
                           </h1>
                         </div>
