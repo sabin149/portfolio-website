@@ -1,3 +1,4 @@
+import banner1 from "assets/bannerImages/banner1.jpg";
 // header data
 export const navigationLinks = [
   {
@@ -68,46 +69,13 @@ export const myArticlesData = [
     imageUrl: "https://picsum.photos/600/360",
     articleUrl: "/",
   },
-  {
-    id: 7,
-    title: "My Second Article",
-    date: "2023/12/12",
-    mediaName: "KAntipur Tv",
-    imageUrl: "https://picsum.photos/id/1/200/300",
-    articleUrl: "/",
-  },
-  {
-    id: 8,
-    title: "My Second Article",
-    date: "2023/12/12",
-    mediaName: "KAntipur Tv",
-    imageUrl: "https://picsum.photos/600/360",
-    articleUrl: "/",
-  },
-  {
-    id: 9,
-    title: "My Second Article",
-    date: "2023/12/12",
-    mediaName: "KAntipur Tv",
-    imageUrl: "https://picsum.photos/id/4/200/300",
-    articleUrl: "/",
-  },
-  {
-    id: 10,
-    title: "My Second Article",
-    date: "2023/12/12",
-    mediaName: "KAntipur Tv",
-    imageUrl: "https://picsum.photos/id/10/200/300",
-    articleUrl: "/",
-  },
 ];
 
 // carousel banner images
 export const bannerImagesData = [
   {
     id: 1,
-    imageUrl:
-      "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    imageUrl: banner1,
   },
   {
     id: 2,

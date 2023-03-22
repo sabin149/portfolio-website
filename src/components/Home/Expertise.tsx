@@ -25,7 +25,7 @@ const Expertise = () => {
                     <div className="max-h-full overflow-hidden rounded-md border-2  bg-gray-50 px-3 pt-3.5 shadow-lg">
                       <Link to={expertise.pageUrl}>
                         <img
-                          className="h-60 w-full object-cover object-center transition duration-500 ease-in-out hover:scale-[1.02]"
+                          className="h-60 w-full object-cover object-top transition duration-500 ease-in-out hover:scale-[1.02]"
                           src={expertise.imageUrl}
                           alt={expertise.title}
                         />

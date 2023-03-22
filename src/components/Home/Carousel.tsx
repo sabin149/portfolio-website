@@ -1,6 +1,6 @@
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import myCV from "assets/1.pdf";
+import myCV from "assets/mycv.pdf";
 import { bannerImagesData } from "data/Data";
 
 const Carousel = () => {
@@ -11,7 +11,7 @@ const Carousel = () => {
           return (
             <div
               key={image.id}
-              className="flex h-96 items-center justify-center bg-cover"
+              className="flex h-[25rem] flex-shrink-0 flex-wrap items-center justify-center object-cover object-top"
               style={{
                 backgroundImage: `url(${image.imageUrl})`,
               }}
