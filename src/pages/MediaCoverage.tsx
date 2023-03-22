@@ -2,11 +2,11 @@ import MyArticlesAndWritings from "components/Home/MyArticlesAndWritings";
 import useCustomEffect from "hooks/useCustomEffect";
 import { useState } from "react";
 import { mediaCoverageData } from "data/Data";
-import { mediaCoverageDataInterface } from "types/Types";
+import { articlesDataInterface } from "types/Types";
 
 const MediaCoverage = () => {
   const [showMore, setShowMore] = useState(true);
-  const [data, setData] = useState<mediaCoverageDataInterface[]>(
+  const [data, setData] = useState<articlesDataInterface[]>(
     mediaCoverageData.slice(0, 6)
   );
 

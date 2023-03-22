@@ -32,7 +32,7 @@ const MyArticlesAndWritings = ({
         </div>
         <div>
           <div className="mx-auto">
-            <div className="flex flex-wrap items-center justify-center">
+            <div className="flex flex-wrap items-center justify-center gap-y-8">
               {articlesData.map((article) => {
                 return (
                   <div
@@ -87,9 +87,9 @@ const MyArticlesAndWritings = ({
         </div>
       </div>
       {check ? (
-        <div className="flex items-center justify-center">
+        <div className="mt-8 flex items-center justify-center xl:mt-10">
           <Link
-            className="mt-4 w-4/5 rounded-full border-0 bg-[#f18d62] py-2.5 px-8 text-center text-xl text-white  transition duration-300 ease-in-out hover:bg-[#EC733F] focus:outline-none "
+            className=" w-4/5 rounded-full border-0 bg-[#f18d62] py-2.5 px-8 text-center text-xl text-white  transition duration-300 ease-in-out hover:bg-[#EC733F] focus:outline-none "
             to="/all-articles"
           >
             See All Articles

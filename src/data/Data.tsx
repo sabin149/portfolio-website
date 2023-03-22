@@ -206,6 +206,7 @@ export const mediaCoverageData = [
     description: "This is my first article",
     imageUrl: "https://picsum.photos/600/360",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 2,
@@ -213,6 +214,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/600/360?grayscale",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 3,
@@ -220,6 +222,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/id/10/600/300",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 4,
@@ -227,6 +230,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/600/360",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 5,
@@ -234,6 +238,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/600/360?grayscale",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 6,
@@ -241,6 +246,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/600/360",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 7,
@@ -248,6 +254,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/id/1/200/300",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 8,
@@ -255,6 +262,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/600/360",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 9,
@@ -262,6 +270,7 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/id/4/200/300",
     articleUrl: "/",
+    date: "12/12/2020",
   },
   {
     id: 10,
@@ -269,5 +278,6 @@ export const mediaCoverageData = [
     description: "This is my second article",
     imageUrl: "https://picsum.photos/id/10/200/300",
     articleUrl: "/",
+    date: "12/12/2020",
   },
 ];

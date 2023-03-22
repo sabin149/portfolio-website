@@ -7,14 +7,7 @@ export interface articlesDataInterface {
   id: number;
   title: string;
   date: string;
-  mediaName: string;
-  imageUrl: string;
-  articleUrl: string;
-}
-export interface mediaCoverageDataInterface {
-  id: number;
-  title: string;
-  description: string;
+  mediaName?: string;
   imageUrl: string;
   articleUrl: string;
 }
