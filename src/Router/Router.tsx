@@ -14,14 +14,7 @@ const AllArticles = lazy(() => import("pages/AllArticles"));
 const ContentCreation = lazy(() => import("pages/ContentCreation"));
 const VoiceOver = lazy(() => import("pages/VoiceOver"));
 const InformationTechnology = lazy(() => import("pages/InformationTechnology"));
-
-const check = false;
-const PageNotFound = lazy(() => {
-  if (check) {
-    return import("pages/PageNotFound");
-  }
-  return import("pages/Home");
-});
+const PageNotFound = lazy(() => import("pages/PageNotFound"));
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
