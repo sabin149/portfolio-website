@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import Router from "router/Router";
+import Router from "Router/Router";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "components/Common/ErrorFallback";
@@ -22,7 +22,7 @@ function App() {
           </div>
         }
       >
-        <RouterProvider router={Router} />{" "}
+        <RouterProvider router={Router} />
       </Suspense>
     </ErrorBoundary>
   );
