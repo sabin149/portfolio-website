@@ -7,14 +7,23 @@ import RootLayout from "Layouts/RootLayout";
 import Home from "pages/Home";
 import { lazy } from "react";
 
-const AboutMe = lazy(() => import("pages/AboutMe"));
-const Contact = lazy(() => import("pages/Contact"));
-const MediaCoverage = lazy(() => import("pages/MediaCoverage"));
-const AllArticles = lazy(() => import("pages/AllArticles"));
-const ContentCreation = lazy(() => import("pages/ContentCreation"));
-const VoiceOver = lazy(() => import("pages/VoiceOver"));
-const InformationTechnology = lazy(() => import("pages/InformationTechnology"));
-const PageNotFound = lazy(() => import("pages/PageNotFound"));
+// const AboutMe = lazy(() => import("pages/AboutMe"));
+// const Contact = lazy(() => import("pages/Contact"));
+// const MediaCoverage = lazy(() => import("pages/MediaCoverage"));
+// const AllArticles = lazy(() => import("pages/AllArticles"));
+// const ContentCreation = lazy(() => import("pages/ContentCreation"));
+// const VoiceOver = lazy(() => import("pages/VoiceOver"));
+// const InformationTechnology = lazy(() => import("pages/InformationTechnology"));
+// const PageNotFound = lazy(() => import("pages/PageNotFound"));
+
+import AboutMe from "pages/AboutMe";
+import Contact from "pages/Contact";
+import MediaCoverage from "pages/MediaCoverage";
+import AllArticles from "pages/AllArticles";
+import ContentCreation from "pages/ContentCreation";
+import VoiceOver from "pages/VoiceOver";
+import InformationTechnology from "pages/InformationTechnology";
+import PageNotFound from "pages/PageNotFound";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
