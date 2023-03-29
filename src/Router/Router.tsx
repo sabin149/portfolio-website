@@ -3,7 +3,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import RootLayout from "Layouts/RootLayout";
+import RootLayout from "layouts/RootLayout";
 import Home from "pages/Home";
 import { lazy } from "react";
 
