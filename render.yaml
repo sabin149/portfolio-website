@@ -1,8 +1,0 @@
-services:
-- type: web
-  env: static
-  buildCommand: vite build
-  staticPublishPath: ./dist
-  routes:
-    - src: /.*
-      dest: /index.html
