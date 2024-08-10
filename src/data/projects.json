@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Airbnb Listings Analysis in New York City",
+    "imageSrc": "projects/airbnb.jpg",
+    "description": "This analysis uses SQL for data querying and Python for data visualization to provide an overview of the Airbnb landscape in New York City.",
+    "skills": ["SQL", "Python", "Pandas", "Numpy" ,"Matplotlib"],
+    "demo": "https://github.com/KritikRawal/Product-Sales-Analysis",
+    "source": "https://github.com/KritikRawal/Product-Sales-Analysis"
+  },
+  {
+    "title": "Ecommerce Application",
+    "imageSrc": "projects/ecommerce.png",
+    "description": "E-commerce furniture webapp that lets admins manage products and inventory, while users can browse, add items to their cart, purchase with secure payment and delivery options.",
+    "skills": ["React", "Express", "Node","MongoDB"],
+    "demo": "https://github.com/KritikRawal/ecom-backend",
+    "source": "https://github.com/KritikRawal/ecom-backend"
+  },
+  {
+    "title": "Product Sales Analysis in Electronics Sector",
+    "imageSrc": "projects/electronic.png",
+    "description": "Leverage internal and external data to uncover insights that drive better product decisions, improve sales strategies, and identify growth opportunities.",
+    "skills": ["Python", "Pandas", "Numpy" ,"Matplotlib"],
+    "demo": "https://github.com/KritikRawal/Product-Sales-Analysis",
+    "source": "https://github.com/KritikRawal/Product-Sales-Analysis"
+  },
+  {
+    "title": "Smart Kitchen System using IOT",
+    "imageSrc": "projects/smart-kitchen.jpg",
+    "description": "Designed and implemented an IoT-based kitchen automation system using the Blynk app for real-time monitoring and remote control of appliances.",
+    "skills": ["C", "IOT Devices","Blynk App"],
+    "demo": "https://github.com/KritikRawal/IndiAssign",
+    "source": "https://github.com/KritikRawal/IndiAssign"
+  }
+]

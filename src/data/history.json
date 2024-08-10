@@ -1,0 +1,32 @@
+[
+  {
+    "role": "Software Engineer I",
+    "organisation": "Techkraft Inc",
+    "startDate": "April, 2024",
+    "endDate": "Present",
+    "experiences": ["Performed data validation and verified the application of business rules to ensure data integrity.", "Extracted and transformed data from AWS S3 to meet business requirements, focusing on US healthcare projects"],
+    "imageSrc": "history/techkraft.png",
+    "companyUrl":"https://techkraftinc.com/"
+  },
+  {
+    "role": "QA Engineer",
+    "organisation": "Techkraft Inc",
+    "startDate": "Jan, 2023",
+    "endDate": "Mar, 2024",
+    "experiences": ["Enhanced and optimized Nepalese Fintech software by identifying and rectifying critical vulnerabilities and bugs, leading to a 25% improvement in performance.", "Collaborated with cross-functional teams to resolve key UI issues, enhancing usability and accessibility for rural users less familiar with technology."],
+    "imageSrc": "history/techkraft.png",
+     "companyUrl":"https://techkraftinc.com/"
+  },
+  {
+    "role": "UI/UX Trainee",
+    "organisation": "Tech Axis",
+    "startDate": "July, 2022",
+    "endDate": "Aug, 2022",
+    "experiences": [
+      "Learned and applied User-Centered Design (UCD) principles to optimize interface designs.",
+      "Conducted user studies and evaluations to identify key usability issues."
+    ],
+    "imageSrc": "history/techaxis.png",
+     "companyUrl":"https://www.axistechinc.com/"
+  }
+]

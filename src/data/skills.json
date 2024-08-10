@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "Databricks",
+    "imageSrc": "skills/databricks.png"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/aws.png"
+  },
+  {
+    "title": "SQL",
+    "imageSrc": "skills/sql.png"
+  },
+  {
+    "title": "ReactJs",
+    "imageSrc": "skills/reactJs.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Tableau",
+    "imageSrc": "skills/tableau.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "Jira",
+    "imageSrc": "skills/jira.png"
+  },
+  {
+    "title": "Agile",
+    "imageSrc": "skills/agile.png"
+  },
+  {
+    "title": "Marketing",
+    "imageSrc": "skills/marketing.png"
+  },
+  {
+    "title": "Entrepreneurship",
+    "imageSrc": "skills/entrepreneurship.png"
+  }
+]
